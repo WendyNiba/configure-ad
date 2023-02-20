@@ -44,10 +44,14 @@ Setup Resources in Azure
 4.Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/xpGBfid.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-
+<br />
+<p>
+<img src="https://i.imgur.com/jEhB05G.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
 <p>
 Ensure Connectivity between the client and Domain Controller
  5.Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
@@ -55,7 +59,7 @@ Ensure Connectivity between the client and Domain Controller
  7.Check back at Client-1 to see the ping succeed
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4CqXj0C.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -67,7 +71,7 @@ Install Active Directory
  10.Restart and then log back into DC-1 as user: mydomain.com\labuser
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bgXYDeJ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -83,7 +87,7 @@ Log out/close the Remote Desktop connection to DC-1 and log back in as “mydoma
 
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1a5Zw9F.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -98,7 +102,7 @@ Join Client-1 to your domain (mydomain.com)
 
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3aF3ntG.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -110,11 +114,11 @@ Setup Remote Desktop for non-administrative users on Client-1
 23. Click “Remote Desktop”
 24. Allow “domain users” access to remote desktop
 25. You can now log into Client-1 as a normal, non-administrative user now
-26. Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+26. Normally you’d want to do this with Group Policy that allows you to change MANY systems at once 
 
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qrXnUiQ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -133,15 +137,13 @@ Create a bunch of additional users and attempt to log into client-1 with one of 
 
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/91bRdGA.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 Finish.
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/BW6tBCv.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+
