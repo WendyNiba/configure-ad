@@ -37,6 +37,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <p>
 Setup Resources in Azure
+ 
  1. Create the Domain Controller VM (Windows Server 2022) named “DC-1”
    a.Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
  
@@ -58,6 +59,7 @@ Setup Resources in Azure
 <br />
 <p>
 Ensure Connectivity between the client and Domain Controller
+ 
  5.Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
  
  6.Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
@@ -73,6 +75,7 @@ Ensure Connectivity between the client and Domain Controller
 
 <p>
 Install Active Directory
+ 
  8.Login to DC-1 and install Active Directory Domain Services
  
  9.Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
@@ -87,6 +90,7 @@ Install Active Directory
 
 <p>
 Create an Admin and Normal User Account in AD
+ 
  11.In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
  
  12. Create a new OU named “_ADMINS”
@@ -108,6 +112,7 @@ Log out/close the Remote Desktop connection to DC-1 and log back in as “mydoma
 
 <p>
 Join Client-1 to your domain (mydomain.com)
+ 
  17. From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
  
  18.From the Azure Portal, restart Client-1
@@ -128,6 +133,7 @@ Join Client-1 to your domain (mydomain.com)
 
 <p>
 Setup Remote Desktop for non-administrative users on Client-1
+ 
 22. Log into Client-1 as mydomain.com\jane_admin and open system properties
  
 23. Click “Remote Desktop”
@@ -148,6 +154,7 @@ Setup Remote Desktop for non-administrative users on Client-1
 
 <p>
 Create a bunch of additional users and attempt to log into client-1 with one of the users
+ 
 27.Login to DC-1 as jane_admin
  
 28.Open PowerShell_ise as an administrator
